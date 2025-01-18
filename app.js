@@ -4,12 +4,11 @@ let listaAmigos = [];
 
 function adicionarAmigo(){
 listaAmigos.push(nome.value);
-
-     //console.log(listaAmigos);
-     //console.log(nome.value);
+console.log(listaAmigos);
+limparCampo();
 }
 
-
+let idiotas = "Eduardo"
 
 if (nome == "") {
     alert("Por Favor, Insira um nome")
@@ -22,6 +21,18 @@ function limparCampo() {
     chute.value = "";
 }
 // odeio o cliff S2
+
+
+if (nome == "") {
+    alert("Por Favor, Insira um nome")
+} else {
+    console.log()
+}
+
+function limparCampo() {
+    chute = document.querySelector("input");
+    chute.value = "";
+}
 
 
 
