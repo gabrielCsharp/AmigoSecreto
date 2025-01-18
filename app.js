@@ -4,32 +4,19 @@ let listaAmigos = [];
 
 function adicionarAmigo(){
 listaAmigos.push(nome.value);
+console.log(listaAmigos);
 
-     //console.log(listaAmigos);
-     //console.log(nome.value):
 }
-
-// ta jogando dentro da let listaAmigos
-// let listaAmigos = [function adicionarAmigo(){
-//listaAmigos.push(nome.value);];
-
-
-
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
-
-
-
 
 
 if (nome == "") {
     alert("Por Favor, Insira um nome")
 } else {
-    console.log("Odeio JavaScript")
+    console.log()
 }
 
 function limparCampo() {
     chute = document.querySelector("input");
     chute.value = "";
 }
-// odeio o cliff S2
 
