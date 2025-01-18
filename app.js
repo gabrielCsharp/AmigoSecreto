@@ -5,7 +5,7 @@ let listaAmigos = [];
 function adicionarAmigo(){
 listaAmigos.push(nome.value);
 console.log(listaAmigos);
-document.querySelector('#depressao');
+limparCampo();
 }
 
 let idiotas = "Eduardo"
