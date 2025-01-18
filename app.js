@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let nome = document.querySelector('#amigo');
 let listaAmigos = [];
 
@@ -7,34 +6,15 @@ function adicionarAmigo(){
 listaAmigos.push(nome.value);
 
      //console.log(listaAmigos);
-     //console.log(nome.value);
+     //console.log(nome.value):
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // ta jogando dentro da let listaAmigos
 // let listaAmigos = [function adicionarAmigo(){
 //listaAmigos.push(nome.value);];
 
 
-=======
+
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 
 
@@ -52,4 +32,4 @@ function limparCampo() {
     chute.value = "";
 }
 // odeio o cliff S2
->>>>>>> 7190d595b04e4d876b49f2f7b67ec98326244b88
+
