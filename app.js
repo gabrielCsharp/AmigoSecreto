@@ -50,7 +50,9 @@ function limparLista() {
     const lista = document.querySelector("#listaAmigos");
     lista.innerHTML = "";
     console.log("Lista limpa:", listaAmigos);
-}
+    if (listaAmigos.length===0);{
+        alert('lista limpa');
+}};
 
 
 
