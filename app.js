@@ -8,42 +8,47 @@ function adicionarAmigo() {
         alert("Por Favor, Insira um nome")
         return;
     }
-    listaAmigos.push(nome.value);
+    listaAmigos.push(nome);
     console.log(listaAmigos);
     atualizarLista();
     limparCampo();
 }
 
-    function atualizarLista() {
-        let lista = document.querySelector('#listaAmigos');
-        lista.innerHTML = '';
-        for (let i = 0; i < listaAmigos.length; i++) {
-            let item = document.createElement('li');
-            item.textContent = listaAmigos[i];
-            lista.appendChild(item);
-        }
+function atualizarLista() {
+    let lista = document.querySelector('#listaAmigos');
+    lista.innerHTML = '';
+    for (let i = 0; i < listaAmigos.length; i++) {
+        let item = document.createElement('li');
+        item.textContent = listaAmigos[i];
+        lista.appendChild(item);
     }
+}
 
 
-
-    function limparCampo() {
-        chute = document.querySelector("input");
-        chute.value = "";
+function sortearAmigo() {
+    if (listaAmigos.length===0) {
+        alert('Adicione amigos antes de sortear');
+        return;
     }
-    // odeio o cliff S2
+    let numeroAleatorio = Math.floor(Math.random() * listaAmigos.length);
 
+let amigoSorteado = listaAmigos[numeroAleatorio];
 
-    if (nome == "") {
-        alert("Por Favor, Insira um nome")
-    } else {
-        console.log()
-    }
+let resultado = document.getElementById("resultado");
+resultado.innerHTML = `O amigo sorteado foi: ${amigoSorteado}`;
 
-    function limparCampo() {
-        chute = document.querySelector("input");
-        chute.value = "";
-    }
+listaAmigos.splice(numeroAleatorio, 1);
+atualizarLista();
 
+}
+
+function limparCampo() {
+    chute = document.querySelector("input");
+    chute.value = "";
+}
+// amamos o cliff S2
+
+ //direitos reservados ©duardin  ©levyano  ©willonmusk  ©cliff  ©bestar  ©biel  ©samuelpastel  ©gabriel44
 
 
 
