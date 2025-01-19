@@ -19,7 +19,7 @@ function atualizarLista() {
     lista.innerHTML = '';
     for (let i = 0; i < listaAmigos.length; i++) {
         let item = document.createElement('li');
-        item.textContent = listaAmigos;
+        item.textContent = listaAmigos[i];
         lista.appendChild(item);
     }
 }
