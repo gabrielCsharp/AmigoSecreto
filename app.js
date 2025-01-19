@@ -19,11 +19,10 @@ function atualizarLista() {
     lista.innerHTML = '';
     for (let i = 0; i < listaAmigos.length; i++) {
         let item = document.createElement('li');
-        item.textContent = listaAmigos[i];
+        item.textContent = listaAmigos;
         lista.appendChild(item);
     }
 }
-
 
 function sortearAmigo() {
     if (listaAmigos.length===0) {
@@ -39,16 +38,19 @@ resultado.innerHTML = `O amigo sorteado foi: ${amigoSorteado}`;
 
 listaAmigos.splice(numeroAleatorio, 1);
 atualizarLista();
-
 }
 
 function limparCampo() {
     chute = document.querySelector("input");
     chute.value = "";
 }
-// amamos o cliff S2
 
- //direitos reservados ©duardin  ©levyano  ©willonmusk  ©cliff  ©bestar  ©biel  ©samuelpastel  ©gabriel44
+function limparLista() {
+    listaAmigos = [];
+    const lista = document.querySelector("#listaAmigos");
+    lista.innerHTML = "";
+    console.log("Lista limpa:", listaAmigos);
+}
 
 
 

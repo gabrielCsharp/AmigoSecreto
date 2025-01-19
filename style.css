@@ -154,9 +154,67 @@ ul {
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 100px;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+    
+}
+
+
+.button-safadinho {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-safadinho img {
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 100px;
+    display: flex;
+    width: 17%;
+    
+    
+}
+.button-safadinho:hover {
+    background-color: var(--color-button-hover);
+    
+}
+
+
+
+
+
+.button-SaiKenga {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+
+
+.button-SaiKenga img {
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 100px;
+    display: flex;
+    width: 17%;
+    
+    
+}
+.button-SaiKenga:hover {
+    background-color: var(--color-button-hover);
+    
 }
